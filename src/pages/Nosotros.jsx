@@ -47,7 +47,7 @@ const Nosotros = () => {
 
         </div>
         <div>
-          <h1 className='title' style={{fontSize: '4.5rem', textAlign: 'end'}} >Visión</h1>
+          <h1 className='title' style={{fontSize: '4.5rem', textAlign: 'end !important'}} >Visión</h1>
           <p className='parrafo' >Promover, crear programas para mantener y mejora la calidad de vida de los seres humanos contribuyendo con su educación y formación integral desde las costumbres y origen de cada región y país, promoviendo la creación de la pequeña y mediana empresa fortaleciendo el emprendimiento colaborativo como base fundamental para el desarrollo y sostenimiento de las personas.</p>
 
         </div>
