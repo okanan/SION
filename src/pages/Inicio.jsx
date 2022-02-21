@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '@mui/material/Button';
+import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 import { Link } from 'react-router-dom';
 
 import './styles/Inicio.scss'
@@ -20,7 +20,7 @@ const Inicio = () => {
               <div className='persona-resumen_ev'>
                 <p className='persona-resumen' >{ele.resumen}</p>
                 <Link to={{ pathname: `/blog/${ele.titulo}` }}>
-                  <Button style={{width: '120px'}} variant="contained" color="primary" size="small" >Saber más</Button>
+                  <ButtonUnstyled  style={{width: '120px'}} className='confirmButton'  >Saber más</ButtonUnstyled>
                 </Link>
               </div>
               <img className='persona-imagen' src={ele.imagen} />
@@ -28,11 +28,7 @@ const Inicio = () => {
               
             </div>
           )
-        }else return(
-          <div key={index}>
-           es otro tipo 
-          </div>
-        )
+        }else return null
       })}
     </div>
   )
