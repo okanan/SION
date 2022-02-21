@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 import { Link } from 'react-router-dom';
 
-import './styles/Inicio.scss'
 
 import {blog} from '../helpers/blog'
+import AppContext from '../helpers/context'
+
+import './styles/Inicio.scss'
 
 const Inicio = () => {
+
+  const state = useContext(AppContext)
+
+  const detalleBlog = (ele) => {
+    console.log(ele)
+  }
 
 
   return (
@@ -20,7 +28,13 @@ const Inicio = () => {
               <div className='persona-resumen_ev'>
                 <p className='persona-resumen' >{ele.resumen}</p>
                 <Link to={{ pathname: `/blog/${ele.titulo}` }}>
-                  <ButtonUnstyled  style={{width: '120px'}} className='confirmButton'  >Saber más</ButtonUnstyled>
+                  <ButtonUnstyled  
+                    style={{width: '120px'}} 
+                    className='confirmButton'
+                    onClick = {() => detalleBlog(ele)}
+                  >
+                    Saber más
+                  </ButtonUnstyled>
                 </Link>
               </div>
               <img className='persona-imagen' src={ele.imagen} />
