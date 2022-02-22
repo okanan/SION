@@ -1,8 +1,41 @@
-import React, {createContext} from 'react'
+import React, {createContext, useState, useEffect} from 'react'
 
-const AppContext = React.createContext();
+import {blog} from './blog'
 
-export const PROVIDER = AppContext.Provider()
-export const CONSUMER = AppContext.Consumer()
+const AppContext = createContext();
 
-export default AppContext;
+function AppProvider (props) {
+
+  const [pestana, setPestana] = useState('inicio')
+
+  const [state, setState] = useState({
+    posts: blog,
+    postDetail: {}
+  })
+
+  useEffect(() => {
+
+    setState({...state, postDetail: {}})
+    
+  }, [pestana])
+  
+
+  return (
+    <AppContext.Provider
+      value={{
+        state,
+        setState,
+        pestana,
+        setPestana
+      }}
+    >
+      {props.children}
+
+    </AppContext.Provider>
+  )
+
+
+}
+
+
+export {AppProvider, AppContext};

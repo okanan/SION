@@ -1,19 +1,24 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 import { Link } from 'react-router-dom';
+import {AppProvider, AppContext} from '../helpers/context'
+
 
 
 import {blog} from '../helpers/blog'
-import AppContext from '../helpers/context'
+// import AppContext from '../helpers/context'
 
 import './styles/Inicio.scss'
 
-const Inicio = () => {
+const Inicio = (props) => {
 
-  const state = useContext(AppContext)
+  const {state, setState} = useContext(AppContext)
 
   const detalleBlog = (ele) => {
-    console.log(ele)
+
+    setState({...state, postDetail: ele })
+
+    console.log(state)
   }
 
 
