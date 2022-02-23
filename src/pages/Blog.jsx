@@ -1,4 +1,4 @@
-import React ,  { useContext, useEffect } from 'react'
+import React ,  { useContext, useState, useEffect } from 'react'
 import {AppProvider, AppContext} from '../helpers/context'
 
 import './styles/Blog.scss'
@@ -7,15 +7,16 @@ const Blog = () => {
 
   const {state, setState} = useContext(AppContext)
 
+
   const renderDetalle = () => {
     if(state.postDetail){
   
-      const {postDetail} = state;
+      const {postDetail, posts} = state;
   
       return(
         <div className='post-detail'>
-          <h2 className='title'>{postDetail.titulo}</h2>
-          {postDetail.contenido}
+          <h2 className='title'>{state.postDetail !== '' ? postDetail.titulo : posts[0].titulo }</h2>
+          {state.postDetail !== '' ? postDetail.contenido : posts[0].contenido}
           <br/>
           <br/>
           <br/>
@@ -29,7 +30,7 @@ const Blog = () => {
   }
 
   useEffect(() => {
-    state.postDetail === {} && setState({...state, postDetail: state.posts[0]})
+    !Object.keys(state.postDetail).length && setState({...state, postDetail: state.posts[0]})
   }, [])
   
 
@@ -40,7 +41,7 @@ const Blog = () => {
       {renderDetalle()}
       <div className='post-list'>
         <h1 className='title'>Otros posts</h1>
-        {state.posts.map((ele, index) => {
+        {!state.postDetail !== '' && state.posts.map((ele, index) => {
           return(
             <div 
               key={index}

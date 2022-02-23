@@ -1,10 +1,43 @@
 @import '../../App.scss';
 
+.carousel-item{
+  height: 100%;
+}
+
+.carousel-inner{
+  height: 100%;
+  
+}
+
+.carouselImage{
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.carousel-indicators{
+  bottom: 16px;
+}
+
 .inicio-cont{
 
   width: 80%;
+  min-height: 75.3vh;
   margin: 0 auto;
   padding: 30px 0;
+
+  .carousel-cont{
+    // margin: 0 -20%;
+    display: flex;
+    width: 100%;
+    height: 83vh;
+    margin: 0 auto 20px auto;
+    // padding-bottom: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  // overflow-y: auto;
 
   .ele-persona{
     display: grid;
@@ -17,6 +50,7 @@
     margin: 0 auto 30px;
 
     .persona-resumen_ev{
+      grid-row: 1 / 3;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;

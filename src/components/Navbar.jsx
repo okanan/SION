@@ -5,7 +5,7 @@ import './styles/Navbar.scss'
 
 const Navbar = () => {
 
-  const [pestana, setPestana] = useState('inicio')
+  const [pestana, setPestana] = useState('')
   const [opciones, setOpciones] = useState([])
 
   const arrOpciones = [
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img style={{marginLeft: '20px'}} src='https://res.cloudinary.com/da6bzgewk/image/upload/v1645393152/LOGO_FUNDACION_SION_bqz0q2.jpg'></img>
+      <img style={{marginLeft: '20px', height:'100%'}} src='https://res.cloudinary.com/da6bzgewk/image/upload/v1645393152/LOGO_FUNDACION_SION_bqz0q2.jpg'></img>
       
       <div className='navbar-opc-cont'>
         {opciones.map( (opcion, index) => {
@@ -47,6 +47,7 @@ const Navbar = () => {
                 className='navbar-opc-item' 
                 to={{ pathname: pestana !== '' ?  `${opcion === 'Inicio' ? '' : opcion}` : '/'}}
                 style={{
+                  height: '100%',
                   borderBottom: opcion === pestana && '5px solid #00B82E',
                   color: opcion === pestana && '#00B82E'
                 }}

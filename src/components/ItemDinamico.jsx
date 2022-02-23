@@ -16,7 +16,7 @@ const ItemDinamico = ({items }) => {
           style={{backgroundImage: `url(${item.background})`}} 
         >
           <div className='list-item_contain' > 
-            <h1>{item.titulo}</h1>
+            <h3>{item.titulo}</h3>
             <p>{item.valor}</p>
           </div>
         </div>

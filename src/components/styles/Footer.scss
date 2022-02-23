@@ -1,7 +1,9 @@
 @import '../../App.scss';
 
 .footer{
-  // position: fixed;
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
   box-sizing: border-box;
   bottom: 0;
   width: 100%;
