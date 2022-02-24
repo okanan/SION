@@ -40,11 +40,10 @@ const Inicio = (props) => {
         prevLabel='' 
       >
   <Carousel.Item>
-    <img
+    <div
       className=" w-100 h-100 carouselImage"
-      src="https://res.cloudinary.com/da6bzgewk/image/upload/c_scale,w_2000/v1645594585/pexels-rodnae-productions-6647037_uobroq.jpg"
-      alt="First slide"
-      style={{position: 'relative'}}
+      alt="item ayudar a los demas"
+      style={{backgroundImage: `url(https://res.cloudinary.com/da6bzgewk/image/upload/c_scale,w_2000/v1645594585/pexels-rodnae-productions-6647037_uobroq.jpg)`}}
     />
     <Carousel.Caption>
       <h3>SION - Emprender social</h3>
@@ -52,10 +51,12 @@ const Inicio = (props) => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+    <div
       className=" w-100 h-100 carouselImage"
-      src="https://res.cloudinary.com/da6bzgewk/image/upload/c_scale,w_2000/v1645594401/pexels-alena-darmel-7742824_zvefmh.jpg"
+      
+      
       alt="Second slide"
+      style={{backgroundImage: `url(https://res.cloudinary.com/da6bzgewk/image/upload/c_scale,w_2000/v1645594401/pexels-alena-darmel-7742824_zvefmh.jpg)`}}
     />
 
     <Carousel.Caption>
@@ -64,10 +65,11 @@ const Inicio = (props) => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+    <div
       className=" w-100 h-100 carouselImage"
       src="https://res.cloudinary.com/da6bzgewk/image/upload/c_scale,w_2000/v1645594394/pexels-shvets-production-7176325_icbv0t.jpg"
       alt="Third slide"
+      style={{backgroundImage: `url(https://res.cloudinary.com/da6bzgewk/image/upload/c_scale,w_2000/v1645594394/pexels-shvets-production-7176325_icbv0t.jpg)`}}
     />
 
     <Carousel.Caption>

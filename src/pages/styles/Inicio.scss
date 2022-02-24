@@ -10,10 +10,9 @@
 }
 
 .carouselImage{
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .carousel-indicators{
@@ -68,5 +67,39 @@
     }
 
   }
+
+  @media screen and (max-width: 768px) {
+  
+    .ele-persona{
+      // display: flex !important;
+      // flex-direction: column;
+      display: grid !important;
+      grid-template: 1fr auto / 1fr;
+
+  
+      .title{
+        font-size: 1.6rem !important;
+      }
+
+      .persona-resumen_ev{
+        grid-row-start: 2;
+      }
+  
+      .persona-imagen{
+        width: 80% !important;
+        height: auto !important;
+        grid-row: 1;
+        grid-column: 1 ;
+  
+  
+      }
+    }
+    
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
 
 }
