@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec90165b.css",
-    "main.js": "/static/js/main.b211feba.js",
-    "index.html": "/index.html",
-    "main.ec90165b.css.map": "/static/css/main.ec90165b.css.map",
-    "main.b211feba.js.map": "/static/js/main.b211feba.js.map"
+    "main.css": "/SION/static/css/main.ec90165b.css",
+    "main.js": "/SION/static/js/main.b211feba.js",
+    "index.html": "/SION/index.html",
+    "main.ec90165b.css.map": "/SION/static/css/main.ec90165b.css.map",
+    "main.b211feba.js.map": "/SION/static/js/main.b211feba.js.map"
   },
   "entrypoints": [
     "static/css/main.ec90165b.css",
