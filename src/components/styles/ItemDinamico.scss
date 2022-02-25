@@ -73,3 +73,30 @@
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .list-container{
+    grid-template-columns: 1fr !important;
+
+    .list-item_contain{
+      transition: 0.2s;
+      p{
+        opacity: 1 !important;
+        // display: none;
+
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .list-container{
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+}

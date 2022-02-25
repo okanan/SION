@@ -42,15 +42,17 @@ const Blog = () => {
       <div className='post-list'>
         <h1 className='title'>Otros posts</h1>
         {!state.postDetail !== '' && state.posts.map((ele, index) => {
-          return(
-            <div 
-              key={index}
-              onClick={() => setState({...state, postDetail: ele})}
-              className='post-ele'
-            >
-              {ele.titulo}
-            </div>
-          )
+          if(ele.tipo !== 'texto'){
+            return(
+              <div 
+                key={index}
+                onClick={() => setState({...state, postDetail: ele})}
+                className='post-ele'
+              >
+                {ele.titulo}
+              </div>
+            )
+          }
         })}
 
       </div>

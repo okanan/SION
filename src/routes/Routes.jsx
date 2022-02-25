@@ -16,6 +16,7 @@ function Routes() {
       <Main>
         <Switch>
           <Route exact path="/" element={<Inicio />} />
+          <Route exact path="/SION" element={<Inicio />} />
           <Route exact path="/inicio" element={<Inicio />} />
           <Route exact path="/nosotros" element={<Nosotros />} />
           <Route exact path="/blog" element={<Blog />} />

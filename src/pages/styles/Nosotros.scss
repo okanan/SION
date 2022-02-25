@@ -5,3 +5,20 @@
 .titleDetail{
   margin-left: 10px;
 }
+
+.myv{
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .myv{
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .parrafo{
+    font-size: 0.8rem;
+  }
+
+}

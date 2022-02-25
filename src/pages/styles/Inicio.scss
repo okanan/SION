@@ -26,6 +26,15 @@
   margin: 0 auto;
   padding: 30px 0;
 
+  .textTitle{
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  .textContent{
+    margin: 60px auto;
+  }
+
   .carousel-cont{
     // margin: 0 -20%;
     display: flex;
@@ -69,6 +78,15 @@
   }
 
   @media screen and (max-width: 768px) {
+
+    .textTitle{
+      font-size: 2rem;
+    }
+
+    .textContent{
+      margin: 20px auto;
+      font-size: 0.8rem;
+    }
 
     .carousel-cont{
       height: 50.3vh;

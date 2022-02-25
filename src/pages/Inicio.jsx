@@ -90,8 +90,8 @@ const Inicio = (props) => {
         if (ele.tipo === 'texto') {
           return (
             <div className='' key={index}>
-                <h1 className='title' style={{ fontSize: '5rem', fontWeight: 700 }} >{ele.titulo}</h1>
-                <div style={{margin: '60px auto'}} >
+                <h1 className='title textTitle' >{ele.titulo}</h1>
+                <div className='textContent'>
                   {ele.parrafos.map((p,index) => {
                     return(
                       <p style={{textAlign: 'justify'}} key={index} >{p}</p>

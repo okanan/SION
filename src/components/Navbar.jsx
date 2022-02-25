@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img style={{marginLeft: '20px', height:'100%'}} src='https://res.cloudinary.com/da6bzgewk/image/upload/v1645393152/LOGO_FUNDACION_SION_bqz0q2.jpg'></img>
+      <img className='logo' src='https://res.cloudinary.com/da6bzgewk/image/upload/v1645393152/LOGO_FUNDACION_SION_bqz0q2.jpg'></img>
       
       <div className='navbar-opc-cont'>
         {opciones.map( (opcion, index) => {

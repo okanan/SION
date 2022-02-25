@@ -47,3 +47,14 @@
 
 
 }
+
+@media screen and (max-width: 768px) {
+  .blog-cont{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+  }
+
+
+}
