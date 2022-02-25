@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SION/static/css/main.ec90165b.css",
-    "main.js": "/SION/static/js/main.b211feba.js",
+    "main.css": "/SION/static/css/main.4469ac5b.css",
+    "main.js": "/SION/static/js/main.0c968079.js",
     "index.html": "/SION/index.html",
-    "main.ec90165b.css.map": "/SION/static/css/main.ec90165b.css.map",
-    "main.b211feba.js.map": "/SION/static/js/main.b211feba.js.map"
+    "main.4469ac5b.css.map": "/SION/static/css/main.4469ac5b.css.map",
+    "main.0c968079.js.map": "/SION/static/js/main.0c968079.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec90165b.css",
-    "static/js/main.b211feba.js"
+    "static/css/main.4469ac5b.css",
+    "static/js/main.0c968079.js"
   ]
 }
