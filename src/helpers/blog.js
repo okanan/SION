@@ -1,4 +1,17 @@
 export const blog = [
+  
+  {
+    "tipo" : "texto",
+    "inicio": true,
+    "titulo": "La fundación",
+    "parrafos" : [
+      "Es una entidad sin ánimo de lucro con más de 5 años de trabajo por los más necesitados, que beneficia directamente a aquellos en estado de vulnerabilidad.",
+      "Lo hacemos a través de la proyectos y programas de emprendimiento autosostenibles con modelo social, con la cual ayudamos a que los más necesitados puedan salir adelante aprendiendo a emprender y así convertirlos en lideres empoderados en su región para seguir contribuyendo significativamente a la reducción de la pobreza en nuestra sociedad.",
+      "Basados en diferentes líneas estratégicas enfocadas en educación, nuevas tecnologías de la información emprendimiento autosostenible, salud mental, ayuda humanitaria, bienestar social, entre otros campos de acción.",
+      "Realizamos la labor social con diferentes grupos poblacionales como: jóvenes con espíritu emprendedor, adultos mayores que no tienen un trabajo y/o pensión y son cabeza de familia, comunidad lgtbi, desplazados, personas con discapacidad, inclusión, mujeres y hombres cabezas de familia."
+
+    ]
+  },
   {
     "tipo" : "persona",
     "inicio": true,
