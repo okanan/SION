@@ -48,7 +48,7 @@ const Nosotros = () => {
         </div>
         <div>
           <p className='title myv' style={{ textAlign: 'end'}} >Visión</p>
-          <p className='parrafo' >Promover, crear programas para mantener y mejora la calidad de vida de los seres humanos contribuyendo con su educación y formación integral desde las costumbres y origen de cada región y país, promoviendo la creación de la pequeña y mediana empresa fortaleciendo el emprendimiento colaborativo como base fundamental para el desarrollo y sostenimiento de las personas.</p>
+          <p className='parrafo' >Ser lideres en  ayudar y expandir a mejorar la calidad de vida de toda la población en estado de vulnerabilidad en todo país necesitado, generando oportunidad de desarrollo y nuevas ideas de emprendimiento social basadas en valores étnicos competentes teniendo como base fundamental el cumplimiento de los derechos humanos.</p>
 
         </div>
       </div>
